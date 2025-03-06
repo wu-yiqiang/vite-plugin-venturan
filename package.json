@@ -14,6 +14,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "sharp": "^0.33.5"
+    "sharp": "^0.33.5",
+    "vite": "^6.2.0"
   }
 }
