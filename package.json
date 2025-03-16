@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build"
   },
   "publishConfig": {
     "access": "public",
@@ -16,5 +17,10 @@
   "devDependencies": {
     "sharp": "^0.33.5",
     "vite": "^6.2.0"
+  },
+  "dependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "path": "^0.12.7",
+    "vue": "^3.5.13"
   }
 }

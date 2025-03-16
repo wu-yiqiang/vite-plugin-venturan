@@ -24,15 +24,3 @@
 //     }
 //   }
 // }
-
-import sharp from 'sharp'
-export const imageOptimizer = () => ({
-  name: 'vite-plugin-image-optimizer',
-  async transform(code: string, id: string) {
-    if (/\.(.png|jpe?g|webp)$/.test(id)) {
-      console.log("ssssssssss", code, id);
-      const buffer = await sharp(code).webp({ quality: 80 }).toBuffer()
-      return `export default ${JSON.stringify(buffer.toString('base64'))}`
-    }
-  }
-})
