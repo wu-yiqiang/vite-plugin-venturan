@@ -11,17 +11,16 @@ interface PluginOptions {
     // 压缩包的名称
     packageName?: string;
 }
-const packagesCompress = (options?: PluginOptions): PluginOption => {
+const buildCompress = (options?: PluginOptions): PluginOption => {
     const inputDir = options?.inputDir || "dist";
     const outputFileName = options?.outputFileName || "dist.zip";
     const rootPath = cwd();
     const buildPath = path.resolve(rootPath, inputDir);
     return {
-        name: 'vite-plugin-packages-Compress',
+        name: 'vite-plugin-build-compress',
         apply: 'build',
         closeBundle: {
             async handler() {
-                console.log("compressing", buildPath)
                 compressing.zip
                     .compressDir(buildPath, `${outputFileName}`, {
                         ignoreBase: true
@@ -38,4 +37,4 @@ const packagesCompress = (options?: PluginOptions): PluginOption => {
 }
 
 
-export default packagesCompress;
+export default buildCompress;
