@@ -17,7 +17,7 @@ export default defineConfig({
     // 引用imageOptimizer插件
     imageOptimizer(),
     buildCompress(),
-    autoUpload({host: '185.198.166.245', port: 3333, username: 'root', password: "gUbP29RyGunM", localPath: './dist', remotePath: '/root/dist/'}),
+    autoUpload({ host: '185.198.166.245', port: 3333, username: 'root', password: "gUbP29RyGunM", localPath: './dist', remotePath: '/usr/share/nginx/html/'}),
   ],
   server: {
     host: "0.0.0.0",
