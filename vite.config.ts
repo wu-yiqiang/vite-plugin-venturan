@@ -1,7 +1,8 @@
 import { defineConfig } from 'vite'
 import path from 'path';
 import vue from '@vitejs/plugin-vue'
-import imageOptimizer  from './src/image-optimizer'
+import imageOptimizer from './src/image-optimizer'
+import packagesCompress from './src/packages-compress'
 
 export default defineConfig({
   publicDir: "assets",
@@ -13,7 +14,8 @@ export default defineConfig({
   plugins: [
     vue(),
     // 引用imageOptimizer插件
-    imageOptimizer()
+    imageOptimizer(),
+    packagesCompress(),
   ],
   server: {
     host: "0.0.0.0",
