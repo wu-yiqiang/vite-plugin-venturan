@@ -1,6 +1,6 @@
 {
   "name": "@venturan/vite-plugin-venturn",
-  "version": "1.0.7",
+  "version": "1.0.9",
   "description": "",
   "main": "plugins/index.ts",
   "scripts": {
@@ -15,11 +15,12 @@
   "author": "venturan",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^22.14.0",
     "sharp": "^0.33.5",
-    "vite": "^6.2.0"
+    "typescript": "^5.8.3",
+    "vite": "^6.2.5"
   },
   "dependencies": {
-    "@types/node": "^22.13.10",
     "@vitejs/plugin-vue": "^5.2.1",
     "chalk": "^5.4.1",
     "compressing": "^1.10.1",
