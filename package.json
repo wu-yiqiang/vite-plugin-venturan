@@ -1,10 +1,10 @@
 {
   "name": "@venturan/vite-plugin-venturn",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "",
-  "main": "plugin/index.ts",
+  "main": "plugins/index.ts",
   "scripts": {
-    "dev": "vite",
+    "start": "vite",
     "build": "vite build"
   },
   "publishConfig": {
@@ -12,13 +12,12 @@
     "registry": "https://registry.npmjs.org/"
   },
   "keywords": [],
-  "author": "",
+  "author": "venturan",
   "license": "ISC",
   "devDependencies": {
     "sharp": "^0.33.5",
     "vite": "^6.2.0"
   },
-  "type": "module",
   "dependencies": {
     "@types/node": "^22.13.10",
     "@vitejs/plugin-vue": "^5.2.1",
