@@ -1,8 +1,8 @@
 {
   "name": "@venturan/vite-plugin-venturn",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
-  "main": "index.ts",
+  "main": "plugin/index.ts",
   "scripts": {
     "dev": "vite",
     "build": "vite build"
@@ -18,7 +18,7 @@
     "sharp": "^0.33.5",
     "vite": "^6.2.0"
   },
-  "type":"module",
+  "type": "module",
   "dependencies": {
     "@types/node": "^22.13.10",
     "@vitejs/plugin-vue": "^5.2.1",
